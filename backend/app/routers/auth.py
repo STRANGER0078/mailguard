@@ -77,4 +77,4 @@ def callback(code: str):
     }
     token = jwt.encode(payload, settings.SECRET_KEY, algorithm="HS256")
 
-    return RedirectResponse(url=f"http://localhost:3000?token={token}")
+    return RedirectResponse(url=f"https://your-vercel-app.vercel.app?token={token}")
