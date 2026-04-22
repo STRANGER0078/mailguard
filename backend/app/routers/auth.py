@@ -77,4 +77,4 @@ def callback(code: str):
     }
     token = jwt.encode(payload, settings.SECRET_KEY, algorithm="HS256")
 
-    return RedirectResponse(url=f"https://your-vercel-app.vercel.app?token={token}")
+    return RedirectResponse(url=f"https://mailguard-zytn.vercel.app?token={token}",)
